@@ -1,0 +1,37 @@
+.title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input input:first-child {
+  border: none;
+  background: #e4e4e4;
+  color: black;
+
+  padding: 10px 16px;
+  font-size: 15px;
+  outline: none;
+}
+
+.input input:nth-child(2) {
+  font-size: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.input input:first-child:focus {
+  box-shadow: 0 0 10px 1000px rgb(0, 0, 0, 0.2);
+
+  outline: none;
+}
