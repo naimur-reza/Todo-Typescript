@@ -39,3 +39,45 @@
 
   outline: none;
 }
+
+/* TO_DO styles */
+
+.todos {
+  padding-top: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  /* display: flex; */
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  /* flex-wrap: wrap; */
+}
+
+.todo {
+  padding: 14px;
+  border-radius: 6px;
+  background-color: rgb(241, 209, 30);
+  color: #000000;
+  margin: 10px 0px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.pen {
+  background: none;
+  color: black;
+  font-size: 17px;
+  cursor: pointer;
+}
+.pen:hover {
+  color: rgb(188, 36, 36);
+}
+.icon-container {
+  display: inline-flex;
+  background: none;
+  justify-items: center;
+  gap: 15px;
+}
