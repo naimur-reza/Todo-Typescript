@@ -81,3 +81,10 @@
   justify-items: center;
   gap: 15px;
 }
+
+.editInput {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  outline-color: rgba(255, 0, 230, 0.92);
+}
