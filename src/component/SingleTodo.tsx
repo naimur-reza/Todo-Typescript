@@ -15,12 +15,16 @@ const SingleTodo: React.FC<Props> = ({ todos, setTodos, todo }) => {
         setTodos(todos.map(todo => todo.id === id? {...todo, isDone: !todo.isDone} :todo))
     
     }
+
+    const handleDelete = (id: number) => {
+        setTodos(todos.filter(todo => todo.id !== id))
+    }
     return (
         <div >
             
             <p className='todo'>{
                 todo.isDone ? <s>{todo.todo }</s> : <span>{ todo.todo}</span>
-        } <span  className='icon-container'><GrEdit className="pen" /> <BsTrash3Fill className="pen"/> <MdOutlineDone onClick={() => hanldeDone(todo.id)} className="pen"/></span></p>
+            } <span className='icon-container'><GrEdit className="pen" /> <BsTrash3Fill className="pen" onClick={ () => handleDelete(todo.id)} /> <MdOutlineDone onClick={() => hanldeDone(todo.id)} className="pen"/></span></p>
     </div>
     );
 };
